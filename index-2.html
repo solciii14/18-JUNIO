@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Elemento <head> provee información general (metadatos) del documento, incluyendo título y enlaces a las hojas de estilos.-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Nivel 2 Belluccia</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Íconos de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Tipografías de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Lexend+Mega&family=Manjari:wght@700&family=Newsreader:ital,wght@0,600;1,600&family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Estilos CSS (incluye Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Estilos Módulo Entradas (solo index-2) -->
+    <style>
+        .packs-section {
+            background-color: #000000;
+            padding: 48px 32px;
+        }
+
+        .packs-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 1140px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .pack-card {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: auto auto auto;
+            column-gap: 32px;
+            row-gap: 0;
+            align-items: end;
+            background-color: color-mix(in srgb, #B51919 14%, #000000);
+            border: 1px solid #FFFFFF;
+            border-radius: 44px;
+            padding: 40px 48px 36px 64px;
+            box-sizing: border-box;
+        }
+
+        .pack-title {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: start;
+            font-family: "League Gothic", sans-serif;
+            font-size: 96pt;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            line-height: 0.88;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .pack-desc {
+            grid-column: 1;
+            grid-row: 2;
+            align-self: start;
+            font-family: "League Gothic", sans-serif;
+            font-size: 52pt;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin: -4px 0 0 0;
+            padding: 0;
+            line-height: 0.88;
+            letter-spacing: 0.02em;
+        }
+
+        .pack-price {
+            grid-column: 1;
+            grid-row: 3;
+            align-self: end;
+            font-family: "League Gothic", sans-serif;
+            font-size: 96pt;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin: 28px 0 0 0;
+            padding: 0;
+            line-height: 0.88;
+            letter-spacing: 0.02em;
+        }
+
+        .pack-btn {
+            grid-column: 2;
+            grid-row: 3;
+            align-self: end;
+            justify-self: end;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Manjari", sans-serif;
+            font-weight: 700;
+            font-size: 38.55pt;
+            color: #FFFFFF;
+            background-color: #B51919;
+            border: none;
+            border-radius: 9999px;
+            text-decoration: none;
+            padding: 12px 40px;
+            line-height: 1;
+            margin: 0;
+        }
+
+        .pack-btn:hover,
+        .pack-btn:focus {
+            color: #FFFFFF;
+            background-color: #B51919;
+        }
+
+        /* Pie de página */
+        .custom-footer {
+            background-color: #B51919;
+            background-image: url("assets/footer-bg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 72px 64px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-link {
+            font-family: "Manjari", sans-serif;
+            font-weight: 700;
+            font-size: 48pt;
+            color: #FFFFFF;
+            text-decoration: underline;
+            text-decoration-color: #FFFFFF;
+            text-underline-offset: 8px;
+            text-decoration-thickness: 2px;
+            line-height: 1;
+        }
+
+        .footer-link:hover,
+        .footer-link:focus {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+
+<!--El elemento <body> define el cuerpo del HTML, es decir, todo el contenido *visible* en una página web.-->
+
+<body id="page-top">
+
+    <!-- Navegación -->
+    <nav class="custom-nav">
+        <div class="nav-logo">NOX</div>
+        <div class="nav-menu">
+            <a href="#lineup" class="nav-link-item">Line up</a>
+            <a href="#cronograma" class="nav-link-item">Cronograma</a>
+            <a href="https://www.google.com/maps/place/Hip%C3%B3dromo+Palermo/@-34.569048,-58.42616,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb5a28c37ff9b:0x289b0f07f03e748b!8m2!3d-34.569048!4d-58.42616!16s%2Fm%2F0zbvg9l?entry=ttu&amp;g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D"
+                class="nav-btn-item">Como llegar</a>
+        </div>
+    </nav>
+
+
+    <!-- Portada -->
+    <header class="custom-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">TRAPVERSE</h1>
+            <p class="hero-date">18 y 19 de diciembre</p>
+            <button class="hero-btn">Comprar entradas</button>
+        </div>
+    </header>
+
+
+    <!-- Módulo corto con una cita-->
+    <aside class="custom-citation" id="frase">
+        <div class="citation-container">
+            <div class="citation-line">YO YA NACI</div>
+            <div class="citation-line">ARRIBA</div>
+        </div>
+    </aside>
+
+
+    <!-- Módulo grande con el Line Up (antiguo módulo de 4 iconos) -->
+    <section id="features" class="lineup-section">
+        <div class="lineup-container">
+            <div class="lineup-logo">NOX</div>
+            <h2 class="lineup-title">TRAPVERSE LINE UP</h2>
+
+            <div class="lineup-artists">
+                <div class="artist-row">DUKI <span>★</span> TRUENO <span>★</span> NICKI NICOLE</div>
+                <div class="artist-row">YSY A <span>★</span> KHEA <span>★</span> LIT KILLAH</div>
+                <div class="artist-row">CAZZU <span>★</span> THIAGO PZK <span>★</span> NEO PISTEA</div>
+                <div class="artist-row y-mas">Y MAS...</div>
+            </div>
+
+            <div class="lineup-footer-text">COMPRA TUS ENTRADAS YA</div>
+        </div>
+    </section>
+
+
+    <!-- Módulo Entradas -->
+    <section id="modulo-entradas" class="packs-section">
+        <div class="packs-container">
+
+            <!-- Pack 1 -->
+            <div class="pack-card">
+                <h3 class="pack-title">PACKGENERAL</h3>
+                <p class="pack-desc">Acceso general a ambos dias</p>
+                <span class="pack-price">$450.000</span>
+                <a href="#comprar-general" class="pack-btn">Comprar</a>
+            </div>
+
+            <!-- Pack 2 -->
+            <div class="pack-card">
+                <h3 class="pack-title">PACKGOLDEN</h3>
+                <p class="pack-desc">Sector preferencial frente al escenario</p>
+                <span class="pack-price">$850.000</span>
+                <a href="#comprar-golden" class="pack-btn">Comprar</a>
+            </div>
+
+            <!-- Pack 3 -->
+            <div class="pack-card">
+                <h3 class="pack-title">PACKPLATINUM</h3>
+                <p class="pack-desc">Zona exclusiva+ merchandising oficial</p>
+                <span class="pack-price">$1.200.000</span>
+                <a href="#comprar-platinum" class="pack-btn">Comprar</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Pie de página -->
+    <footer class="custom-footer">
+        <div class="footer-links">
+            <a href="https://www.ticketek.com.ar/" class="footer-link">Ticketek</a>
+            <a href="https://home.passline.com/" class="footer-link">Passline</a>
+            <a href="https://www.allaccess.com.ar/" class="footer-link">Allaccess</a>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- JavaScript del sitio-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
